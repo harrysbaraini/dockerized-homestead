@@ -1,6 +1,6 @@
 # DockerizedHomestead
 
-Dockerized version of Laravel Homestead.Developed to my personal use and to be used on my workflow at [Citrus7](http://www.citrus7.com.br).
+Dockerized version of Laravel Homestead.
 
 > This repository is based on [laraedit-docker](htts://github.com/laraedit/laraedit-docker) and [homestead-docker](https://github.com/shincoder/homestead-docker).
 
