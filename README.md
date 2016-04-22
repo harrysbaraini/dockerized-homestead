@@ -2,7 +2,7 @@
 
 Dockerized version of Laravel Homestead.
 
-> This repository is based on [laraedit-docker](htts://github.com/laraedit/laraedit-docker) and [homestead-docker](https://github.com/shincoder/homestead-docker).
+> This repository is based on [laraedit-docker](https://github.com/laraedit/laraedit-docker) and [homestead-docker](https://github.com/shincoder/homestead-docker).
 
 # Documentation
 
