@@ -6,7 +6,7 @@ Dockerized version of Laravel Homestead.
 
 # Documentation
 
-1 - ``git clone https://github.com/harrysbaraini/dockerized-homestead.git```
+1 - ```git clone https://github.com/harrysbaraini/dockerized-homestead.git```
 
 2 - Edit docker-compose.uml to your needs. Default volume directory is **~/homestead/volumes** and default app directory is **~/Dev**.
 
