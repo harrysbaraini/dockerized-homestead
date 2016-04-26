@@ -1,5 +1,6 @@
 web:
-    image: harry/homestead:v1
+    image: harrysbaraini/homestead:v1
+    container_name: hs_homestead_web
     restart: always
     ports:
         - "80:80" # web
@@ -11,8 +12,8 @@ web:
         - ~/.gitconfig:/home/homestead/.gitconfig # Git configuration ( access alias && config )
         - ~/.ssh:/home/homestead/.ssh # Ssh keys for easy deployment inside the container
         - ~/Dev:/var/www/html # all apps
-        - ~/_docker/volumes/sites-available:/etc/nginx/sites-available # nginx sites ( in case you recreate the container )
-        - ~/_docker/volumes/sites-enabled:/etc/nginx/sites-enabled # nginx sites ( in case you recreate the container )
+        - ~/homestead/volumes/sites-available:/etc/nginx/sites-available # nginx sites ( in case you recreate the container )
+        - ~/homestead/volumes/sites-enabled:/etc/nginx/sites-enabled # nginx sites ( in case you recreate the container )
     links:
         - mariadb
 
@@ -25,4 +26,4 @@ mariadb:
         MARIADB_USER: admin # cannot be changed ( for info. only )
         MARIADB_PASS: root
     volumes:
-        - ~/_docker/volumes/mysql:/var/lib/mysql # database files
+        - ~/homestead/volumes/mysql:/var/lib/mysql # database files
