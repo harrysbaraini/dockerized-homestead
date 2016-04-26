@@ -15,7 +15,7 @@ Dockerized version of Laravel Homestead.
 # Access to container
 
 There is a script file included in this repository to serve as a shortcut for bash inside container.
-Just run and you got it:
+Just run it and go on!
 
 ```
 ./bash.sh
@@ -23,7 +23,7 @@ Just run and you got it:
 
 # Virtual hosts
 
-You can add virtual hosts to the container. Enter bash and run ```/serve.sh {serve-address} {serve-path}```
+You can add infinite virtual hosts! Enter bash and run ```/serve.sh {serve-address} {serve-path}```
 
 **Example:**
 ```
