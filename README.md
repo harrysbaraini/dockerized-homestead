@@ -6,34 +6,26 @@ Dockerized version of Laravel Homestead.
 
 # Documentation
 
-1 - Clone this repository.
+1 - ``git clone https://github.com/harrysbaraini/dockerized-homestead.git```
 
-2 - First step is to build the Docker image. Run the following command from image directory (inside the cloned repo).
+2 - Edit docker-compose.uml to your needs. Default volume directory is **~/homestead/volumes** and default app directory is **~/Dev**.
 
-```
-docker build -t harry/homestead:v1
-```
+3 - ```docker-compose up -d``` inside directory of the cloned repository.
 
-3 - Edit docker-compose.uml to your needs. Default volume directory is **~/_docker/volumes** and default app directory is **~/Dev**.
+# Access to container
 
-4 - From root directory (of cloned repo), run:
-
-```
-docker-compose up -d
-```
-
-5 - To access the container, run, from root directory of cloned repo:
+There is a script file included in this repository to serve as a shortcut for bash inside container.
+Just run and you got it:
 
 ```
 ./bash.sh
 ```
 
-6 - You can add virtual hosts running:
+# Virtual hosts
 
+You can add virtual hosts to the container. Enter bash and run ```/serve.sh {serve-address} {serve-path}```
+
+**Example:**
 ```
-/serve.sh {serve-address} {serve-path}
+    /serve.sh app.local /var/www/html/app/public
 ```
-
-e.g: ```/serve.sh app.local /var/www/html/app/public```
-
-7 - Just code!
